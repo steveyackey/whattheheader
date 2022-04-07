@@ -6,7 +6,7 @@ Available to run with `steveyackey/whattheheader:latest`
 
 Run it in kubernetes:
 ```bash
-kubectl create deploy whattheheader --image=steveyackey/wth  
+kubectl create deploy whattheheader --image=steveyackey/whattheheader  
 
 # Expose through a ClusterIP
 kubectl expose deploy whattheheader --port=80 --target-port=8080 --type=ClusterIP
