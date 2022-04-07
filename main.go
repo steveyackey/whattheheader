@@ -22,7 +22,7 @@ func logging(w http.ResponseWriter, r *http.Request) {
 func main() {
 	fmt.Println("--- What the header??? ---")
 	fmt.Printf("Each request will log the headers and also print the received headers to the response body.\n\n")
-	log.Println("Starting server...")
+	log.Println("Listening on 0.0.0.0:8080.")
 	http.HandleFunc("/", logging)
 	http.ListenAndServe(":8080", nil)
 }
